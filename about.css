@@ -1,0 +1,87 @@
+header {
+	margin-top: 80px;
+
+}
+
+article {
+	text-align: center;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+article h1 {
+	margin-top: 150px;
+}
+
+#aboutusp {
+	margin: 25px 100px;
+}
+.card-holder {
+	display: flex;
+	justify-content: center;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-right: 50px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.card img {
+	width: 250px;
+	height: 235px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+
+
+footer {
+	text-align: center;
+	height: 100px;
+	margin-top: 50px;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.card-holder {
+		display: grid;
+		align-items: center;
+		justify-items: center;
+	}
+	article {
+		margin: 40px 20px;
+	}
+	.card {
+		margin: 20px;
+	}
+	#aboutimg {
+		display: block;
+		height: 250px;
+	}
+	#aboutusp {
+		margin: 0px 20px;
+	}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+		#aboutimg {
+		width: 130px;
+		height: 130px;
+	}
+	article.card-holder div.card div.container p {
+		font-size: 12px;
+	}
+}
