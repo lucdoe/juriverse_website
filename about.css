@@ -1,4 +1,7 @@
-header {
+	body {
+		margin: 0;
+	}
+	header {
 	margin-top: 80px;
 
 }
@@ -11,6 +14,7 @@ article {
 
 article h1 {
 	margin-top: 130px;
+	width: auto;
 }
 
 #aboutusp {
@@ -19,6 +23,7 @@ article h1 {
 .card-holder {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 40px;
 }
 .card {
   /* Add shadows to create the "card" effect */
@@ -44,9 +49,6 @@ article h1 {
   padding: 2px 16px;
 }
 
-.signup {
-	margin: 20px;
-}
 
 
 footer {
@@ -78,6 +80,9 @@ footer {
 	.signup {
 		margin: -20px;
 	}
+	section {
+		text-align: center;
+	}
 }
 
 @media only screen 
@@ -91,12 +96,43 @@ and (max-device-width : 1024px) {
 		margin-top: 45px;
 	}
 	article.card-holder div.card div.container p {
-		font-size: 12px;
+		font-size: 10px;
 	}
 	#aboutusp {
 		margin: 20px 10px;
 	}
 	.card {
 		margin: 15px;
+	}
+	section, article {
+		text-align: center;
+	}
+}
+
+@media (max-width: 1169px) {
+	p {
+		font-size: 14px;
+	}
+	.card {
+		margin-top: 35px;
+	}
+	.card img {
+		width: 180px;
+		height: 165px;
+	}
+	section, article {
+		text-align: center;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+	.card {
+		width: 25%;
+		margin-bottom: 50px;
+		margin-top: 100px;
+	}
+	.card img {
+		display: block;
+		width: 100%;
 	}
 }

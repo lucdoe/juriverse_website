@@ -23,21 +23,16 @@
 
 .cc_container .cc_btn {
 	background-color: var(--main-color-lawra-primary) !important;
-	/* Farbe des Buttons */
 	color: white !important;
-	/* Textfarbe des Buttons */
 }
 
 .cc_container {
 	background: var(--main-color-cool-gray) !important;
-	/* Hintergrundfarbe des gesamten Bereichs */
 	color: var(--bg-color-white) !important;
-	/* Schriftfarbe des gesamten Bereichs */
 }
 
 .cc_container a {
 	color: var(--main-color-lawra-primary) !important;
-	/* Textlink-Farbe "Mehr Infos" */
 }
 
 body {
@@ -451,7 +446,37 @@ p {
 		display: none;
 	}
 }
+@media (min-width: 768px) and (max-width: 1098px ) {
+	h1 {
+		font-size: 30px;
+		width: 370px;
+	}
+	.info p {
+		width: 300px;
+	}
 
+	.info {
+		width: 100%;
+	}
+	.start {
+		margin-left: 20px;
+	}
+	body {
+		margin: 0px;
+	}
+	footer {
+		display: flex;
+		margin: 0;
+		justify-content: center;
+	}
+	footer a {
+		padding: 30px;
+		margin: 0;
+	}
+	a#teamlink {
+		margin-right: 20px;
+	}
+}
 /* DEVICE: Desktop */
 @media (min-width: 1025px) {
 	.grid {
@@ -606,7 +631,4 @@ p {
 
 	}
 
-	footer a {
-		margin-right: 50px;
-	}
 }
